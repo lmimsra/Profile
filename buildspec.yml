@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - npm install
+  build:
+    commands:
+      - npm run build
+  post_build:
+    commands:
+      - tar cf /tmp/node_modules.tar node_modules
+artifacts:
+  files:
+    - '**/*'
+  base-directory: dist
