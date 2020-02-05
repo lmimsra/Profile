@@ -806,34 +806,34 @@
     </section>
 
     <!-- Achievement Level -->
-    <!-- <section class="section section-text">
-          <nav class="level">
-            <div class="level-item has-text-centered">
-              <div>
-                <p class="heading">Tweets</p>
-                <p class="title">3,456</p>
-              </div>
-            </div>
-            <div class="level-item has-text-centered">
-              <div>
-                <p class="heading">Following</p>
-                <p class="title">123</p>
-              </div>
-            </div>
-            <div class="level-item has-text-centered">
-              <div>
-                <p class="heading">Followers</p>
-                <p class="title">456K</p>
-              </div>
-            </div>
-            <div class="level-item has-text-centered">
-              <div>
-                <p class="heading">Likes</p>
-                <p class="title">789</p>
-              </div>
-            </div>
-          </nav>
-        </section> -->
+    <section class="section">
+      <nav class="level">
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading">Tweets</p>
+            <p class="title">3,456</p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading">Following</p>
+            <p class="title">123</p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading">Followers</p>
+            <p class="title">456K</p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading">Likes</p>
+            <p class="title">789</p>
+          </div>
+        </div>
+      </nav>
+    </section>
 
     <!-- Contact -->
     <section class="section" id="contact">
@@ -879,9 +879,9 @@
               <div class="field is-grouped has-text-centered">
                 <div class="control">
                   <button class="button is-link is-large">
-                    <span class="icon">
-                      <i class="fas fa-envelope"></i>
-                    </span>
+                    <!--                    <span class="icon">-->
+                    <!--                      <i class="fas fa-envelope"></i>-->
+                    <!--                    </span>-->
                     <span>Submit</span>
                   </button>
                 </div>

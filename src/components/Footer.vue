@@ -8,9 +8,8 @@
         <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
       </p>
       <p>
-        <strong>Made</strong> by <a href="https://www.lmimsra.com">Lima</a>
-        The source code is licensed
-        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+        <strong>Customized</strong> by
+        <a href="https://www.lmimsra.com">Lima</a>.
       </p>
     </div>
   </footer>
