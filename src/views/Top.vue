@@ -9,10 +9,10 @@
         <div class="container">
           Hello! I am
           <h1 class="title is-1">
-            Minion Tim
+            Lima.json
           </h1>
           <h2 class="subtitle is-3">
-            Full Stack Web Developer
+            Backend Web Developer <br />(API Developer)
           </h2>
         </div>
       </div>
@@ -23,7 +23,7 @@
       <!-- Title -->
       <div class="section-heading">
         <h3 class="title is-2">About Me</h3>
-        <h4 class="subtitle is-5">Jack of all trades, master of "some"</h4>
+        <h4 class="subtitle is-5">私について、概要</h4>
         <div class="container">
           <p>
             Web developer with more than <strong>4 years</strong> of
@@ -52,24 +52,31 @@
                   </tr>
                   <tr>
                     <td>Address:</td>
-                    <td>Guru's Lab</td>
+                    <td>Tokyo, Kanagawa</td>
                   </tr>
                   <tr>
                     <td>Phone:</td>
-                    <td>0123-456789</td>
+                    <td>secret!!</td>
                   </tr>
                   <tr>
                     <td>Email:</td>
-                    <td>minion@despicable.me</td>
+                    <td>lmimsra07@gmail.com</td>
                   </tr>
                 </table>
               </div>
               <br />
               <div class="buttons has-addons is-centered">
-                <a href="#" class="button is-link">Github</a>
-                <a href="#" class="button is-link">LinkedIn</a>
-                <a href="#" class="button is-link">Twitter</a>
-                <a href="#" class="button is-link">CodeTrace</a>
+                <a href="https://github.com/lmimsra" class="button is-link">
+                  Github
+                </a>
+                <!--                <a href="#" class="button is-link">LinkedIn</a>-->
+                <a
+                  href="https://twitter.com/lmimsra_dev"
+                  class="button is-link"
+                >
+                  Twitter
+                </a>
+                <!--                <a href="#" class="button is-link">CodeTrace</a>-->
               </div>
             </div>
           </div>
@@ -79,6 +86,7 @@
           <div class="card">
             <div class="card-image">
               <figure class="image is-4by3">
+                <!-- TODO なんか画像入れる -->
                 <img
                   src="https://source.unsplash.com/random/1280x960"
                   alt="Placeholder image"
@@ -97,39 +105,7 @@
                   <div class="media-content">
                     <div class="content">
                       <p>
-                        <strong>JavaScript:</strong>
-                        <br />
-                        <progress
-                          class="progress is-primary"
-                          value="90"
-                          max="100"
-                        ></progress>
-                      </p>
-                    </div>
-                  </div>
-                </article>
-
-                <article class="media">
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>Vue.js:</strong>
-                        <br />
-                        <progress
-                          class="progress is-primary"
-                          value="90"
-                          max="100"
-                        ></progress>
-                      </p>
-                    </div>
-                  </div>
-                </article>
-
-                <article class="media">
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>Node.js:</strong>
+                        <strong>PHP(Laravel):</strong>
                         <br />
                         <progress
                           class="progress is-primary"
@@ -145,11 +121,11 @@
                   <div class="media-content">
                     <div class="content">
                       <p>
-                        <strong>HTML5/CSS3</strong>
+                        <strong>JavaScript(Vue.js):</strong>
                         <br />
                         <progress
                           class="progress is-primary"
-                          value="95"
+                          value="30"
                           max="100"
                         ></progress>
                       </p>
@@ -161,11 +137,58 @@
                   <div class="media-content">
                     <div class="content">
                       <p>
-                        <strong>Databases</strong>
+                        <strong>HTML5/CSS3</strong>
                         <br />
                         <progress
                           class="progress is-primary"
-                          value="66"
+                          value="30"
+                          max="100"
+                        ></progress>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Dart(Flutter)</strong>
+                        <br />
+                        <progress
+                          class="progress is-primary"
+                          value="40"
+                          max="100"
+                        ></progress>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Go</strong>
+                        <br />
+                        <progress
+                          class="progress is-primary"
+                          value="20"
+                          max="100"
+                        ></progress>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+                <article class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Database(MySQL)</strong>
+                        <br />
+                        <progress
+                          class="progress is-primary"
+                          value="60"
                           max="100"
                         ></progress>
                       </p>
@@ -180,22 +203,35 @@
     </section>
 
     <!-- Skills tags -->
-    <!-- <br>
-              <div class="tags custom-tags">
-                <span class="tag is-light">Node.js</span><span class="tag is-light">Express.js</span><span class="tag is-light">VueJS</span><span
-                  class="tag is-light">JavaScript</span><span class="tag is-light">HTML5</span><span class="tag is-light">Canvas</span><span
-                  class="tag is-light">CSS3</span><span class="tag is-light">Bulma</span><span class="tag is-light">Bootstrap</span><span
-                  class="tag is-light">jQuery</span><span class="tag is-light">Pug</span><span class="tag is-light">Stylus</span><span
-                  class="tag is-light">SASS/SCSS</span><span class="tag is-light">Webpack</span><span class="tag is-light">Git</span><span
-                  class="tag is-light">ASP.NET Web Forms</span><span class="tag is-light">MSSQL</span><span class="tag is-light">MongoDB</span><span
-                  class="tag is-light">Apache Cordova</span><span class="tag is-light">Chrome Extensions</span>
-              </div> -->
+    <br />
+    <div class="tags custom-tags">
+      <span class="tag is-light">Node.js</span>
+      <span class="tag is-light">VueJS</span>
+      <span class="tag is-light">JavaScript</span>
+      <span class="tag is-light">HTML5</span>
+      <span class="tag is-light">CSS3</span>
+      <span class="tag is-light">Bulma</span>
+      <span class="tag is-light">Bootstrap</span>
+      <span class="tag is-light">PHP</span>
+      <span class="tag is-light">Laravel</span>
+      <span class="tag is-light">MySQL</span>
+      <span class="tag is-light">AWS</span>
+      <span class="tag is-light">Go</span>
+      <span class="tag is-light">Flutter</span>
+      <span class="tag is-light">PHPUnit</span>
+      <span class="tag is-light">Git</span>
+      <span class="tag is-light">RESTful API</span>
+      <span class="tag is-light">JetBrains</span>
+      <span class="tag is-light">Nginx</span>
+      <span class="tag is-light">firebase</span>
+      <span class="tag is-light">serverless</span>
+    </div>
 
     <!-- Services -->
     <section class="section" id="services">
       <div class="section-heading section-text">
         <h3 class="title is-2">Services</h3>
-        <h4 class="subtitle is-5">What can I do for you?</h4>
+        <h4 class="subtitle is-5">提供する価値</h4>
       </div>
       <div class="container">
         <div class="columns">
@@ -243,7 +279,7 @@
     </section>
 
     <!-- Resume -->
-    <section class="section" id="resume">
+    <!-- <section class="section" id="resume">
       <div class="section-heading section-text">
         <h3 class="title is-2">Resume</h3>
         <h4 class="subtitle is-5">More about my past</h4>
@@ -254,14 +290,14 @@
           <span>Download My Resume</span>
         </a>
       </div>
-    </section>
+    </section> -->
 
     <!-- Portfolio -->
     <section class="section" id="portfolio">
       <div class="container">
         <div class="section-heading section-text">
           <h3 class="title is-2">Portfolio</h3>
-          <h4 class="subtitle is-5">My latest works</h4>
+          <h4 class="subtitle is-5">直近作ったものたち</h4>
         </div>
         <br />
 
@@ -898,15 +934,15 @@
 </template>
 
 <script>
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 export default {
-  name: "Top",
+  name: 'Top',
   components: {
     Header,
     Footer
   }
-};
+}
 </script>
 
 <style scoped lang="scss">
