@@ -101,100 +101,12 @@
             <div class="card-content skills-content">
               <h3 class="title is-4">Skills</h3>
               <div class="content">
-                <article class="media">
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>PHP(Laravel):</strong>
-                        <br />
-                        <progress
-                          class="progress is-primary"
-                          value="75"
-                          max="100"
-                        ></progress>
-                      </p>
-                    </div>
-                  </div>
-                </article>
-
-                <article class="media">
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>JavaScript(Vue.js):</strong>
-                        <br />
-                        <progress
-                          class="progress is-primary"
-                          value="30"
-                          max="100"
-                        ></progress>
-                      </p>
-                    </div>
-                  </div>
-                </article>
-
-                <article class="media">
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>HTML5/CSS3</strong>
-                        <br />
-                        <progress
-                          class="progress is-primary"
-                          value="30"
-                          max="100"
-                        ></progress>
-                      </p>
-                    </div>
-                  </div>
-                </article>
-
-                <article class="media">
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>Dart(Flutter)</strong>
-                        <br />
-                        <progress
-                          class="progress is-primary"
-                          value="40"
-                          max="100"
-                        ></progress>
-                      </p>
-                    </div>
-                  </div>
-                </article>
-
-                <article class="media">
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>Go</strong>
-                        <br />
-                        <progress
-                          class="progress is-primary"
-                          value="20"
-                          max="100"
-                        ></progress>
-                      </p>
-                    </div>
-                  </div>
-                </article>
-                <article class="media">
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>Database(MySQL)</strong>
-                        <br />
-                        <progress
-                          class="progress is-primary"
-                          value="60"
-                          max="100"
-                        ></progress>
-                      </p>
-                    </div>
-                  </div>
-                </article>
+                <SkillBar
+                  v-for="(skill, index) in skills"
+                  v-bind:key="index"
+                  v-bind:skill-name="skill.name"
+                  v-bind:skill-level="skill.value"
+                />
               </div>
             </div>
           </div>
@@ -205,26 +117,13 @@
     <!-- Skills tags -->
     <br />
     <div class="tags custom-tags">
-      <span class="tag is-light">Node.js</span>
-      <span class="tag is-light">VueJS</span>
-      <span class="tag is-light">JavaScript</span>
-      <span class="tag is-light">HTML5</span>
-      <span class="tag is-light">CSS3</span>
-      <span class="tag is-light">Bulma</span>
-      <span class="tag is-light">Bootstrap</span>
-      <span class="tag is-light">PHP</span>
-      <span class="tag is-light">Laravel</span>
-      <span class="tag is-light">MySQL</span>
-      <span class="tag is-light">AWS</span>
-      <span class="tag is-light">Go</span>
-      <span class="tag is-light">Flutter</span>
-      <span class="tag is-light">PHPUnit</span>
-      <span class="tag is-light">Git</span>
-      <span class="tag is-light">RESTful API</span>
-      <span class="tag is-light">JetBrains</span>
-      <span class="tag is-light">Nginx</span>
-      <span class="tag is-light">firebase</span>
-      <span class="tag is-light">serverless</span>
+      <span
+        class="tag is-light"
+        v-for="(tagName, index) in skillTags"
+        v-bind:key="index"
+      >
+        {{ tagName }}
+      </span>
     </div>
 
     <!-- Services -->
@@ -936,11 +835,47 @@
 <script>
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import SkillBar from '@/components/SkillBar'
 export default {
   name: 'Top',
+  data() {
+    return {
+      skills: [
+        { name: 'PHP(Laravel)', value: 75 },
+        { name: 'JavaScript(vue.js)', value: 30 },
+        { name: 'HTML5/CSS3', value: 30 },
+        { name: 'Dart(Flutter)', value: 40 },
+        { name: 'Go', value: 20 },
+        { name: 'Database(MySQL)', value: 45 }
+      ],
+      skillTags: [
+        'Node.js',
+        'VueJS',
+        'JavaScript',
+        'HTML5',
+        'CSS3',
+        'Bulma',
+        'Bootstrap',
+        'PHP',
+        'Laravel',
+        'MySQL',
+        'AWS',
+        'Go',
+        'Flutter',
+        'PHPUnit',
+        'Git',
+        'RESTful API',
+        'JetBrains',
+        'Nginx',
+        'firebase',
+        'serverless'
+      ]
+    }
+  },
   components: {
     Header,
-    Footer
+    Footer,
+    SkillBar
   }
 }
 </script>
