@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="navbar is-link is-fixed-top">
+    <nav class="navbar is-origin-color is-fixed-top">
       <div class="navbar-brand">
         <div
           class="navbar-burger burger"

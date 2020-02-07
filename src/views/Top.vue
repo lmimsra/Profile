@@ -4,16 +4,31 @@
     <Header />
 
     <!-- Head area -->
-    <section class="hero is-link is-fullheight is-fullheight-with-navbar">
+    <section
+      class="hero is-origin-color is-fullheight is-fullheight-with-navbar"
+    >
       <div class="hero-body">
         <div class="container">
-          Hello! I am
-          <h1 class="title is-1">
-            Lima.json
-          </h1>
-          <h2 class="subtitle is-3">
-            Backend Web Developer <br />(API Developer)
-          </h2>
+          <div class="columns">
+            <div class="column is-one-fifth-tablet">
+              <figure class="image is-128x128" style="margin: auto">
+                <img
+                  alt="プロフィール写真"
+                  class="is-rounded"
+                  src="https://bulma.io/images/placeholders/128x128.png"
+                />
+              </figure>
+            </div>
+            <div class="column is-four-fifths-tablet has-text-centered-mobile">
+              Hello! I am
+              <h1 class="title is-1">
+                Lima.json
+              </h1>
+              <h2 class="subtitle is-3">
+                Backend Web Developer <br />(API Developer)
+              </h2>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -81,20 +96,20 @@
             </div>
           </div>
         </div>
-        <div class="column">
-          <!-- Profile picture -->
-          <div class="card">
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <!-- TODO なんか画像入れる -->
-                <img
-                  src="https://source.unsplash.com/random/1280x960"
-                  alt="Placeholder image"
-                />
-              </figure>
-            </div>
-          </div>
-        </div>
+        <!--        <div class="column">-->
+        <!--          &lt;!&ndash; Profile picture &ndash;&gt;-->
+        <!--          <div class="card">-->
+        <!--            <div class="card-image">-->
+        <!--              <figure class="image is-4by3">-->
+        <!--                &lt;!&ndash; TODO なんか画像入れる &ndash;&gt;-->
+        <!--                <img-->
+        <!--                  src="https://source.unsplash.com/random/1280x960"-->
+        <!--                  alt="Placeholder image"-->
+        <!--                />-->
+        <!--              </figure>-->
+        <!--            </div>-->
+        <!--          </div>-->
+        <!--        </div>-->
         <div class="column">
           <!-- Skills -->
           <div class="card">
@@ -196,7 +211,7 @@
       <div class="container">
         <div class="section-heading section-text">
           <h3 class="title is-2">Portfolio</h3>
-          <h4 class="subtitle is-5">直近作ったものたち</h4>
+          <h4 class="subtitle is-5">作ったものなど</h4>
         </div>
         <br />
 
@@ -207,33 +222,37 @@
               <div class="card">
                 <header class="card-header">
                   <p class="card-header-title">
-                    <span>Admin <small>(Light)</small></span>
-                    <span class="is-pulled-right">
-                      <a
-                        href="https://github.com/jgthms/bulma/releases/tag/0.7.2"
-                      >
-                        <span class="tag is-default">v0.7.2</span>
-                      </a>
-                      <span class="tag is-default">Desktop</span>
-                      <span class="tag is-danger">WIP</span>
-                    </span>
+                    <span>Nuxt.js on Lambda<small>(ついでにAPI)</small></span>
+                    <!--                    <span class="is-pulled-right">-->
+                    <!--                      <a-->
+                    <!--                        href="https://github.com/jgthms/bulma/releases/tag/0.7.2"-->
+                    <!--                      >-->
+                    <!--                        <span class="tag is-default">v0.7.2</span>-->
+                    <!--                      </a>-->
+                    <!--                      <span class="tag is-default">Desktop</span>-->
+                    <!--                      <span class="tag is-danger">WIP</span>-->
+                    <!--                    </span>-->
                   </p>
                 </header>
                 <div class="card-content">
                   <figure class="image">
                     <img
-                      src="https://bulmatemplates.github.io/bulma-templates/images/admin.png"
+                      src="@/assets/image/noImage.png"
                       alt="Admin template screenshot"
                     />
                   </figure>
                 </div>
                 <footer class="card-footer">
-                  <a href="templates/admin.html" class="card-footer-item"
+                  <a
+                    href="https://test.apisample.dev/"
+                    class="card-footer-item"
+                    target="_blank"
                     >Preview</a
                   >
                   <a
-                    href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/admin.html"
+                    href="https://github.com/lmimsra/NuxtOnLambda"
                     class="card-footer-item"
+                    target="_blank"
                     >Source Code</a
                   >
                 </footer>
@@ -257,18 +276,22 @@
                 <div class="card-content">
                   <figure class="image">
                     <img
-                      src="https://bulmatemplates.github.io/bulma-templates/images/cards.png"
+                      src="@/assets/image/noImage.png"
                       alt="Cards template screenshot"
                     />
                   </figure>
                 </div>
                 <footer class="card-footer">
-                  <a href="templates/cards.html" class="card-footer-item"
+                  <a
+                    href="templates/cards.html"
+                    class="card-footer-item"
+                    target="_blank"
                     >Preview</a
                   >
                   <a
                     href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/cards.html"
                     class="card-footer-item"
+                    target="_blank"
                     >Source Code</a
                   >
                 </footer>
@@ -292,18 +315,22 @@
                 <div class="card-content">
                   <figure class="image">
                     <img
-                      src="https://bulmatemplates.github.io/bulma-templates/images/forum.png"
+                      src="@/assets/image/noImage.png"
                       alt="Hero template screenshot"
                     />
                   </figure>
                 </div>
                 <footer class="card-footer">
-                  <a href="templates/forum.html" class="card-footer-item"
+                  <a
+                    href="templates/forum.html"
+                    class="card-footer-item"
+                    target="_blank"
                     >Preview</a
                   >
                   <a
                     href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/forum.html"
                     class="card-footer-item"
+                    target="_blank"
                     >Source Code</a
                   >
                 </footer>
@@ -327,18 +354,22 @@
                 <div class="card-content">
                   <figure class="image">
                     <img
-                      src="https://bulmatemplates.github.io/bulma-templates/images/instaalbum.png"
+                      src="@/assets/image/noImage.png"
                       alt="Landing template screenshot"
                     />
                   </figure>
                 </div>
                 <footer class="card-footer">
-                  <a href="templates/instaAlbum.html" class="card-footer-item"
+                  <a
+                    href="templates/instaAlbum.html"
+                    class="card-footer-item"
+                    target="_blank"
                     >Preview</a
                   >
                   <a
                     href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/instaAlbum.html"
                     class="card-footer-item"
+                    target="_blank"
                     >Source Code</a
                   >
                 </footer>
@@ -362,18 +393,22 @@
                 <div class="card-content">
                   <figure class="image">
                     <img
-                      src="https://bulmatemplates.github.io/bulma-templates/images/landing.png"
+                      src="@/assets/image/noImage.png"
                       alt="Landing template screenshot"
                     />
                   </figure>
                 </div>
                 <footer class="card-footer">
-                  <a href="templates/landing.html" class="card-footer-item"
+                  <a
+                    href="templates/landing.html"
+                    class="card-footer-item"
+                    target="_blank"
                     >Preview</a
                   >
                   <a
                     href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/landing.html"
                     class="card-footer-item"
+                    target="_blank"
                     >Source Code</a
                   >
                 </footer>
@@ -399,18 +434,22 @@
                 <div class="card-content">
                   <figure class="image">
                     <img
-                      src="https://bulmatemplates.github.io/bulma-templates/images/band.png"
+                      src="@/assets/image/noImage.png"
                       alt="Band template screenshot"
                     />
                   </figure>
                 </div>
                 <footer class="card-footer">
-                  <a href="templates/band.html" class="card-footer-item"
+                  <a
+                    href="templates/band.html"
+                    class="card-footer-item"
+                    target="_blank"
                     >Preview</a
                   >
                   <a
                     href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/band.html"
                     class="card-footer-item"
+                    target="_blank"
                     >Source Code</a
                   >
                 </footer>
@@ -434,18 +473,22 @@
                 <div class="card-content">
                   <figure class="image">
                     <img
-                      src="https://dummyimage.com/555x255/000/fff"
+                      src="@/assets/image/noImage.png"
                       alt="Cheatsheet template screenshot"
                     />
                   </figure>
                 </div>
                 <footer class="card-footer">
-                  <a href="templates/cheatsheet.html" class="card-footer-item"
+                  <a
+                    href="templates/cheatsheet.html"
+                    class="card-footer-item"
+                    target="_blank"
                     >Preview</a
                   >
                   <a
                     href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/cheatsheet.html"
                     class="card-footer-item"
+                    target="_blank"
                     >Source Code</a
                   >
                 </footer>
@@ -469,18 +512,22 @@
                 <div class="card-content">
                   <figure class="image">
                     <img
-                      src="https://bulmatemplates.github.io/bulma-templates/images/hero.png"
+                      src="@/assets/image/noImage.png"
                       alt="Hero template screenshot"
                     />
                   </figure>
                 </div>
                 <footer class="card-footer">
-                  <a href="templates/hero.html" class="card-footer-item"
+                  <a
+                    href="templates/hero.html"
+                    class="card-footer-item"
+                    target="_blank"
                     >Preview</a
                   >
                   <a
                     href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/hero.html"
                     class="card-footer-item"
+                    target="_blank"
                     >Source Code</a
                   >
                 </footer>
@@ -504,18 +551,22 @@
                 <div class="card-content">
                   <figure class="image">
                     <img
-                      src="https://bulmatemplates.github.io/bulma-templates/images/kanban.png"
+                      src="@/assets/image/noImage.png"
                       alt="Kanban template screenshot"
                     />
                   </figure>
                 </div>
                 <footer class="card-footer">
-                  <a href="templates/kanban.html" class="card-footer-item"
+                  <a
+                    href="templates/kanban.html"
+                    class="card-footer-item"
+                    target="_blank"
                     >Preview</a
                   >
                   <a
                     href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/kanban.html"
                     class="card-footer-item"
+                    target="_blank"
                     >Source Code</a
                   >
                 </footer>
@@ -539,18 +590,22 @@
                 <div class="card-content">
                   <figure class="image">
                     <img
-                      src="https://bulmatemplates.github.io/bulma-templates/images/login.png"
+                      src="@/assets/image/noImage.png"
                       alt="Login template screenshot"
                     />
                   </figure>
                 </div>
                 <footer class="card-footer">
-                  <a href="templates/login.html" class="card-footer-item"
+                  <a
+                    href="templates/login.html"
+                    class="card-footer-item"
+                    target="_blank"
                     >Preview</a
                   >
                   <a
                     href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/login.html"
                     class="card-footer-item"
+                    target="_blank"
                     >Source Code</a
                   >
                 </footer>
@@ -576,18 +631,22 @@
                 <div class="card-content">
                   <figure class="image">
                     <img
-                      src="https://bulmatemplates.github.io/bulma-templates/images/blog.png"
+                      src="@/assets/image/noImage.png"
                       alt="Blog template screenshot"
                     />
                   </figure>
                 </div>
                 <footer class="card-footer">
-                  <a href="templates/blog.html" class="card-footer-item"
+                  <a
+                    href="templates/blog.html"
+                    class="card-footer-item"
+                    target="_blank"
                     >Preview</a
                   >
                   <a
                     href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/blog.html"
                     class="card-footer-item"
+                    target="_blank"
                     >Source Code</a
                   >
                 </footer>
@@ -611,18 +670,22 @@
                 <div class="card-content">
                   <figure class="image">
                     <img
-                      src="https://bulmatemplates.github.io/bulma-templates/images/cover.png"
+                      src="@/assets/image/noImage.png"
                       alt="Cover template screenshot"
                     />
                   </figure>
                 </div>
                 <footer class="card-footer">
-                  <a href="templates/cover.html" class="card-footer-item"
+                  <a
+                    href="templates/cover.html"
+                    class="card-footer-item"
+                    target="_blank"
                     >Preview</a
                   >
                   <a
                     href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/cover.html"
                     class="card-footer-item"
+                    target="_blank"
                     >Source Code</a
                   >
                 </footer>
@@ -646,18 +709,22 @@
                 <div class="card-content">
                   <figure class="image">
                     <img
-                      src="https://bulmatemplates.github.io/bulma-templates/images/inbox.png"
+                      src="@/assets/image/noImage.png"
                       alt="Inbox template screenshot"
                     />
                   </figure>
                 </div>
                 <footer class="card-footer">
-                  <a href="templates/inbox.html" class="card-footer-item"
+                  <a
+                    href="templates/inbox.html"
+                    class="card-footer-item"
+                    target="_blank"
                     >Preview</a
                   >
                   <a
                     href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/inbox.html"
                     class="card-footer-item"
+                    target="_blank"
                     >Source Code</a
                   >
                 </footer>
@@ -681,7 +748,7 @@
                 <div class="card-content">
                   <figure class="image">
                     <img
-                      src="https://bulmatemplates.github.io/bulma-templates/images/kanban2.png"
+                      src="@/assets/image/noImage.png"
                       alt="Kanban template screenshot"
                     />
                   </figure>
@@ -690,11 +757,13 @@
                   <a
                     href="templates/kanban[search].html"
                     class="card-footer-item"
+                    target="_blank"
                     >Preview</a
                   >
                   <a
                     href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/kanban[search].html"
                     class="card-footer-item"
+                    target="_blank"
                     >Source Code</a
                   >
                 </footer>
@@ -718,18 +787,22 @@
                 <div class="card-content">
                   <figure class="image">
                     <img
-                      src="https://dummyimage.com/555x255/000/fff"
+                      src="@/assets/image/noImage.png"
                       alt="modal-cards template screenshot"
                     />
                   </figure>
                 </div>
                 <footer class="card-footer">
-                  <a href="templates/modal-cards.html" class="card-footer-item"
+                  <a
+                    href="templates/modal-cards.html"
+                    class="card-footer-item"
+                    target="_blank"
                     >Preview</a
                   >
                   <a
                     href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/modal-cards.html"
                     class="card-footer-item"
+                    target="_blank"
                     >Source Code</a
                   >
                 </footer>
