@@ -5,7 +5,7 @@
         <span>{{ title }}</span>
         <span class="is-pulled-right">
           <span
-            class="tag is-default"
+            class="tag is-default tag-space"
             v-for="(tag, index) in tags"
             v-bind:key="index"
           >
@@ -18,9 +18,7 @@
       <figure class="image" v-if="imageFile !== null">
         <img v-bind:src="getImage()" alt="portfolioイメージ" />
       </figure>
-      <p v-else>
-        {{ description }}
-      </p>
+      <p v-html="getMainContent()"></p>
     </div>
     <footer class="card-footer">
       <a :href="previewLink" class="card-footer-item" target="_blank">
@@ -47,8 +45,21 @@ export default {
   methods: {
     getImage() {
       return require('@/assets/image/' + this.$props.valueOf().imageFile)
+    },
+    getMainContent() {
+      const doc = this.$props.valueOf().description
+      return doc.replace(/\n/g, '<br />')
+    },
+    getPreviewLink() {
+      return this.$props.valueOf().previewLink === null
+        ? '#'
+        : this.$props.valueOf().previewLink
     }
   }
 }
 </script>
-<style scoped></style>
+<style scoped>
+.tag-space {
+  margin: 0 1px;
+}
+</style>

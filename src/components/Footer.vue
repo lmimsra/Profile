@@ -9,7 +9,7 @@
       </p>
       <p>
         <strong>Customized</strong> by
-        <a href="https://www.lmimsra.com">Lima</a>.
+        <a href="https://twitter.com/lmimsra_dev">Lima</a>.
       </p>
     </div>
   </footer>
