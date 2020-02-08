@@ -128,7 +128,6 @@
     </section>
 
     <!-- Skills tags -->
-    <br />
     <div class="tags custom-tags">
       <span
         class="tag is-light"
@@ -277,25 +276,25 @@
         <div class="level-item has-text-centered">
           <div>
             <p class="heading">Tweets</p>
-            <p class="title">3,456</p>
+            <p class="title">150,000</p>
           </div>
         </div>
         <div class="level-item has-text-centered">
           <div>
             <p class="heading">Following</p>
-            <p class="title">123</p>
+            <p class="title">641</p>
           </div>
         </div>
         <div class="level-item has-text-centered">
           <div>
             <p class="heading">Followers</p>
-            <p class="title">456K</p>
+            <p class="title">427</p>
           </div>
         </div>
         <div class="level-item has-text-centered">
           <div>
             <p class="heading">Likes</p>
-            <p class="title">789</p>
+            <p class="title">11,000</p>
           </div>
         </div>
       </nav>
