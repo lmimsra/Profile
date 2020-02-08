@@ -1,4 +1,4 @@
-# service-portal
+# Profile
 
 ## Project setup
 ```
@@ -32,3 +32,7 @@ npm run test:unit
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+## bulma screen size definition
+See [https://bulma.io/documentation/overview/responsiveness/](https://bulma.io/documentation/overview/responsiveness/)
