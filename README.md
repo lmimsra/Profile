@@ -1,4 +1,4 @@
-# service-portal
+# Profile
 
 ## Project setup
 ```

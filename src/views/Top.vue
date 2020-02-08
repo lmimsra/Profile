@@ -15,7 +15,7 @@
                 <img
                   alt="プロフィール写真"
                   class="is-rounded"
-                  src="https://bulma.io/images/placeholders/128x128.png"
+                  src="@/assets/myIcon.jpg"
                 />
               </figure>
             </div>
@@ -41,13 +41,11 @@
         <h4 class="subtitle is-5">私について、概要</h4>
         <div class="container">
           <p>
-            Web developer with more than <strong>4 years</strong> of
-            well-rounded experience with a degree in the field of
-            <strong>Computer Science</strong>, extensive knowledge of modern Web
-            techniques and love for <strong>Coffee</strong>. Looking for an
-            opportunity to work and upgrade, as well as being involved in an
-            organization that believes in gaining a competitive edge and giving
-            back to the community.
+            API開発を主としたバックエンドエンジニアをしています。<br />
+            MAU300万を超えるスマホアプリや、スマホでの注文を行うSPAのバックエンド開発をしてきました。
+            業務経験のある言語はPHP(Laravel)、vue.jsはコードレビュー程度。AWS上での開発をしました。<br />
+            個人的にflutter, go, vue.jsの勉強をしています。
+            このサイトもvue.jsとCSSとしてbulmaで作っています。
           </p>
         </div>
       </div>
@@ -141,29 +139,49 @@
       </span>
     </div>
 
-    <!-- Services -->
-    <section class="section" id="services">
+    <!-- Resume -->
+    <section class="section" id="resume">
       <div class="section-heading section-text">
-        <h3 class="title is-2">Services</h3>
-        <h4 class="subtitle is-5">提供する価値</h4>
+        <h3 class="title is-2">Resume</h3>
+        <h4 class="subtitle is-5">実績・経験</h4>
       </div>
+      <!--      <a href="#" class="button is-link is-medium">-->
+      <!--        <span class="icon">-->
+      <!--          <i class="fas fa-file-alt"></i>-->
+      <!--        </span>-->
+      <!--        <span>Download My Resume</span>-->
+      <!--      </a>-->
       <div class="container">
         <div class="columns">
           <div class="column">
             <div class="box">
               <div class="content">
-                <h4 class="title is-5">Front End Web Development</h4>
-                Develop Front End using latest standards with HTML5/CSS3 with
-                added funtionality using JavaScript and Vue.js.
+                <h4 class="title is-5">スマホ予約アプリAPI開発</h4>
+                大手飲食店の席予約アプリ開発<br />
+                ■ 使用技術<br />
+                Lumen(php7.0), Redis, MySQL, EC2(ECS)<br />
+                ■ 担当<br />
+                運用保守案件の要件定義, 設計, 実装, テスト<br />
+                アプリ開発のベンダコントロール<br />
+                ■ 実績<br />
+                既存バグの改修、案件レベルの要件定義、アプリ用の管理画面新規開発
               </div>
             </div>
           </div>
           <div class="column">
             <div class="box">
               <div class="content">
-                <h4 class="title is-5">Back End Web Development</h4>
-                Develop Back End application/service using Node.js or ASP .NET
-                and SQL server or Mongo DB databases.
+                <h4 class="title is-5">商品注文SPA API開発</h4>
+                大手飲食店の注文アプリ新規開発<br />
+                ■ 使用技術<br />
+                vue.js, Laravel(php7.3), RedisCluster, MySQL, Docker,
+                ECS(AWS)<br />
+                ■ 担当<br />
+                新規開発の要件定義, 設計, 実装, テスト, 運用保守全般<br />
+                アプリ開発のベンダコントロール<br />
+                ネイティブ, web, API横断的な開発サポート<br />
+                ■ 実績<br />
+                新規API設計90本(PJ合計), API実装, 運用保守対応全般, cloudWatchを使ったログ調査
               </div>
             </div>
           </div>
@@ -173,24 +191,41 @@
           <div class="column">
             <div class="box">
               <div class="content">
-                <h4 class="title is-5">Front End Web Development</h4>
-                Develop Front End using latest standards with HTML5/CSS3 with
-                added funtionality using JavaScript and Vue.js.
-              </div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="box">
-              <div class="content">
-                <h4 class="title is-5">Back End Web Development</h4>
-                Develop Back End application/service using Node.js or ASP .NET
-                and SQL server or Mongo DB databases.
+                <h4 class="title is-5">問診票システム開発</h4>
+                病院向け問診票電子化プロジェクト(大学)<br />
+                ■ 使用技術<br />
+                JavaEE(Java8), MySQL, Tomcat<br />
+                ■ 担当<br />
+                要求整理, 要件定義, 設計, デザイン(CSS), 実装, テスト <br />
+                システム全体のUI, UX対応<br />
+                ■ 実績<br />
+                プロトタイプ型開発提案, 開発環境構築全般, 画面デザイン・調整, 進捗管理
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Services -->
+    <!-- <section class="section" id="services">
+      <div class="section-heading section-text">
+        <h3 class="title is-2">Services</h3>
+        <h4 class="subtitle is-5">提供する価値</h4>
+      </div>
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <div class="box">
+              <div class="content">
+                <h4 class="title is-5">バックエンド API開発</h4>
+                Laravelフレームワークを使ったAPI開発の設計、実装、テストコード、各種テストまで対応します。
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
 
     <!-- Resume -->
     <!-- <section class="section" id="resume">
