@@ -26,12 +26,12 @@
             </span>
             <span>About</span>
           </a>
-          <a class="navbar-item" href="#services" @click="closeBurger()">
-            <span class="icon">
-              <i class="fas fa-bars"></i>
-            </span>
-            <span>Services</span>
-          </a>
+          <!--          <a class="navbar-item" href="#services" @click="closeBurger()">-->
+          <!--            <span class="icon">-->
+          <!--              <i class="fas fa-bars"></i>-->
+          <!--            </span>-->
+          <!--            <span>Services</span>-->
+          <!--          </a>-->
           <a class="navbar-item" href="#resume" @click="closeBurger()">
             <span class="icon">
               <i class="fas fa-file-alt"></i>
