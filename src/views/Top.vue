@@ -25,7 +25,7 @@
                 Lima.json
               </h1>
               <h2 class="subtitle is-3">
-                Backend Web Developer <br />(API Developer)
+                Backend Engineer <br />(API Developer)
               </h2>
             </div>
           </div>
@@ -253,7 +253,7 @@
 
         <div class="container portfolio-container">
           <div class="columns">
-            <div class="column is-4">
+            <div class="column is-6 is-offset-3-tablet">
               <PortfolioCard
                 v-for="(item, index) in portfolios"
                 v-bind:key="index"
