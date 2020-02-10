@@ -404,6 +404,17 @@ export default {
       ],
       portfolios: [
         {
+          title: 'ポートフォリオサイト',
+          tags: ['vue.js', 'PWA', 'bulma'],
+          // imageFile: 'noImage.png',
+          imageFile: null,
+          description:
+            '自分の経歴などを紹介するサイト。vueとbulmaで実装。テンプレからなのでアプリケーション的に使えるように改善していきたい。' +
+            'AWSのパイプラインで自動デプロイできるようにするまではがんばりました。そう、このサイトですw',
+          previewLink: 'https://www.lmimsra.dev/',
+          codeLink: 'https://github.com/lmimsra/Profile'
+        },
+        {
           title: 'Nuxt.js on Lambda',
           tags: ['nuxt', 'lambda', 'ssr'],
           // imageFile: 'noImage.png',
