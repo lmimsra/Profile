@@ -82,32 +82,16 @@
                 <a href="https://github.com/lmimsra" class="button is-link">
                   Github
                 </a>
-                <!--                <a href="#" class="button is-link">LinkedIn</a>-->
                 <a
                   href="https://twitter.com/lmimsra_dev"
                   class="button is-link"
                 >
                   Twitter
                 </a>
-                <!--                <a href="#" class="button is-link">CodeTrace</a>-->
               </div>
             </div>
           </div>
         </div>
-        <!--        <div class="column">-->
-        <!--          &lt;!&ndash; Profile picture &ndash;&gt;-->
-        <!--          <div class="card">-->
-        <!--            <div class="card-image">-->
-        <!--              <figure class="image is-4by3">-->
-        <!--                &lt;!&ndash; TODO なんか画像入れる &ndash;&gt;-->
-        <!--                <img-->
-        <!--                  src="https://source.unsplash.com/random/1280x960"-->
-        <!--                  alt="Placeholder image"-->
-        <!--                />-->
-        <!--              </figure>-->
-        <!--            </div>-->
-        <!--          </div>-->
-        <!--        </div>-->
         <div class="column">
           <!-- Skills -->
           <div class="card">
@@ -144,6 +128,7 @@
         <h3 class="title is-2">Resume</h3>
         <h4 class="subtitle is-5">実績・経験</h4>
       </div>
+      <!--   TODO: そのうち経歴書ダウンロードできるようにしたい   -->
       <!--      <a href="#" class="button is-link is-medium">-->
       <!--        <span class="icon">-->
       <!--          <i class="fas fa-file-alt"></i>-->
@@ -252,11 +237,13 @@
         <br />
 
         <div class="container portfolio-container">
-          <div class="columns">
-            <div class="column is-6 is-offset-3-tablet">
+          <div class="columns is-multiline">
+            <div
+              class="column is-half-tablet"
+              v-for="(item, index) in portfolios"
+              v-bind:key="index"
+            >
               <PortfolioCard
-                v-for="(item, index) in portfolios"
-                v-bind:key="index"
                 :title="item.title"
                 :tags="item.tags"
                 :image-file="item.imageFile"
@@ -404,7 +391,7 @@ export default {
       ],
       portfolios: [
         {
-          title: 'ポートフォリオサイト',
+          title: 'portfolio site',
           tags: ['vue.js', 'PWA', 'bulma'],
           // imageFile: 'noImage.png',
           imageFile: null,
@@ -429,7 +416,7 @@ export default {
           tags: ['go', 'lambda'],
           imageFile: null,
           description:
-            '実行日のGitのアクティビティ数を確認してTwitterとSlackに送信するバッチアプリ。Goを試しに使うためだけに作成',
+            '実行日のGitのアクティビティ数を確認してTwitterとSlackに送信するバッチとして利用。Goを試しに使ってみたくて作成',
           previewLink:
             'https://twitter.com/lmimsra_dev/status/1226156340722196480?s=20',
           codeLink: 'https://github.com/lmimsra/GitCommitChecker'
