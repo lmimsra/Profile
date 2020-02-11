@@ -285,6 +285,14 @@
           </div>
         </div>
       </nav>
+
+      <div class="twitter-widget">
+        <Timeline
+          :id="tweetId"
+          :source-type="'profile'"
+          :options="{ height: tweetHeight }"
+        />
+      </div>
     </section>
 
     <!-- Contact -->
@@ -355,6 +363,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import SkillBar from '@/components/SkillBar'
 import PortfolioCard from '@/components/PortfolioCard'
+import { Timeline } from 'vue-tweet-embed'
 export default {
   name: 'Top',
   data() {
@@ -441,14 +450,17 @@ export default {
           previewLink: null,
           codeLink: 'https://github.com/lmimsra/privante'
         }
-      ]
+      ],
+      tweetId: 'lmimsra_dev',
+      tweetHeight: '800'
     }
   },
   components: {
     Header,
     Footer,
     SkillBar,
-    PortfolioCard
+    PortfolioCard,
+    Timeline
   }
 }
 </script>
