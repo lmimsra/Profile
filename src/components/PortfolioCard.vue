@@ -22,7 +22,9 @@
     </div>
     <footer class="card-footer">
       <a :href="previewLink" class="card-footer-item" target="_blank">
-        Preview
+        <span v-bind:class="{ 'null-target-link': isNullTargetLink }">
+          Preview
+        </span>
       </a>
       <a :href="codeLink" class="card-footer-item" target="_blank">
         Source Code
@@ -39,7 +41,7 @@ export default {
     tags: Array,
     imageFile: String || null,
     description: String,
-    previewLink: String,
+    previewLink: String || null,
     codeLink: String
   },
   methods: {
@@ -55,11 +57,20 @@ export default {
         ? '#'
         : this.$props.valueOf().previewLink
     }
+  },
+  computed: {
+    isNullTargetLink() {
+      return this.$props.previewLink === null
+    }
   }
 }
 </script>
-<style scoped>
+<style scoped lang="scss">
 .tag-space {
   margin: 0 1px;
+}
+.null-target-link {
+  color: black;
+  text-decoration: line-through;
 }
 </style>

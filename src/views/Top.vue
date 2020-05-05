@@ -136,59 +136,17 @@
       <!--        <span>Download My Resume</span>-->
       <!--      </a>-->
       <div class="container">
-        <div class="columns">
-          <div class="column">
-            <div class="box">
-              <div class="content">
-                <h4 class="title is-5">スマホ予約アプリAPI開発</h4>
-                大手飲食店の席予約アプリ開発<br />
-                ■ 使用技術<br />
-                Lumen(php7.0), Redis, MySQL, EC2(ECS)<br />
-                ■ 担当<br />
-                運用保守案件の要件定義, 設計, 実装, テスト<br />
-                アプリ開発のベンダコントロール<br />
-                ■ 実績<br />
-                既存バグの改修、案件レベルの要件定義、アプリ用の管理画面新規開発
-              </div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="box">
-              <div class="content">
-                <h4 class="title is-5">商品注文SPA API開発</h4>
-                大手飲食店の注文アプリ新規開発<br />
-                ■ 使用技術<br />
-                vue.js, Laravel(php7.3), RedisCluster, MySQL, Docker,
-                ECS(AWS)<br />
-                ■ 担当<br />
-                新規開発の要件定義, 設計, 実装, テスト, 運用保守全般<br />
-                アプリ開発のベンダコントロール<br />
-                ネイティブ, web, API横断的な開発サポート<br />
-                ■ 実績<br />
-                新規API設計90本(PJ合計), API実装, 運用保守対応全般,
-                cloudWatchを使ったログ調査
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="columns">
-          <div class="column">
-            <div class="box">
-              <div class="content">
-                <h4 class="title is-5">問診票システム開発</h4>
-                病院向け問診票電子化プロジェクト(大学)<br />
-                ■ 使用技術<br />
-                JavaEE(Java8), MySQL, Tomcat<br />
-                ■ 担当<br />
-                要求整理, 要件定義, 設計, デザイン(CSS), 実装, テスト <br />
-                システム全体のUI, UX対応<br />
-                ■ 実績<br />
-                プロトタイプ型開発提案, 開発環境構築全般, 画面デザイン・調整,
-                進捗管理
-              </div>
-            </div>
-          </div>
+        <div class="columns is-multiline">
+          <Resume
+            v-for="(resume, index) in resumes"
+            v-bind:key="index"
+            v-bind:title="resume.title"
+            v-bind:about="resume.about"
+            v-bind:technology="resume.technology"
+            v-bind:role="resume.role"
+            v-bind:performance="resume.performance"
+            v-bind:members="resume.members"
+          />
         </div>
       </div>
     </section>
@@ -364,6 +322,7 @@ import Footer from '@/components/Footer'
 import SkillBar from '@/components/SkillBar'
 import PortfolioCard from '@/components/PortfolioCard'
 import { Timeline } from 'vue-tweet-embed'
+import Resume from '@/components/Resume'
 export default {
   name: 'Top',
   data() {
@@ -452,7 +411,42 @@ export default {
         }
       ],
       tweetId: 'lmimsra_dev',
-      tweetHeight: '800'
+      tweetHeight: '800',
+      resumes: [
+        {
+          title: 'スマホ予約アプリAPI開発',
+          about: '大手飲食店の席予約アプリ運用開発',
+          technology: 'Lumen(php7.0), Redis, MySQL, EC2(AWS)',
+          role:
+            '運用保守案件の要件定義, 設計, 実装, テスト, アプリ開発のベンダコントロール',
+          performance:
+            'バックエンド開発リード, 既存バグの改修, 案件レベルの要件定義, アプリ用の管理画面新規開発',
+          members: '6人(PM1, バックエンド2, ネイティブ3)'
+        },
+        {
+          title: '商品注文SPA API開発',
+          about: '大手飲食店の注文アプリ新規開発・運用',
+          technology:
+            'vue.js, Laravel(php7.3), RedisCluster, MySQL, Docker, ECS(AWS)',
+          role:
+            '新規開発の要件定義, 設計, 実装, テスト, 運用保守全般, ' +
+            'アプリ開発のベンダコントロール, ネイティブ, web, API横断的な開発サポート',
+          performance:
+            'PM, PL, バックエンド開発リード, 新規API設計90本(PJ合計), API実装, 運用保守対応全般, cloudWatchを使ったログ調査',
+          members: '10人(PM1, バックエンド3, ネイティブ3, フロント2, 企画1)'
+        },
+        {
+          title: '問診票システム開発',
+          about: '病院向け問診票電子化プロジェクト(大学在学中)',
+          technology: 'JavaEE(Java8), JSF, Jax-rs, MySQL, Tomcat',
+          role:
+            '要求整理, 要件定義, 設計, デザイン(CSS), 実装, ' +
+            'テスト, システム全体のUI, UX対応',
+          performance:
+            'プロトタイプ型開発提案, 開発環境構築全般, 画面デザイン・調整, 進捗管理',
+          members: '3人(PM1, エンジニア2)'
+        }
+      ]
     }
   },
   components: {
@@ -460,7 +454,8 @@ export default {
     Footer,
     SkillBar,
     PortfolioCard,
-    Timeline
+    Timeline,
+    Resume
   }
 }
 </script>
