@@ -45,7 +45,8 @@
             MAU300万を超えるスマホアプリや、スマホでの注文を行うSPAのバックエンド開発をしてきました。
             業務経験のある言語はPHP(Laravel)、vue.jsはコードレビュー程度。AWS上での開発をしました。<br />
             個人的にflutter, go, vue.jsの勉強をしています。
-            このサイトもvue.jsとCSSとしてbulmaで作っています。
+            このサイトもvue.jsとCSSとしてbulmaで作っています。<br />
+            バックエンドエンジニアから、次のステージとしてアーキテクトを目指してバックエンドに限らず様々な知識を集めています。
           </p>
         </div>
       </div>
@@ -97,6 +98,7 @@
           <div class="card">
             <div class="card-content skills-content">
               <h3 class="title is-4">Skills</h3>
+              ※個人の100% 独断で評価しています
               <div class="content">
                 <SkillBar
                   v-for="(skill, index) in skills"
@@ -328,9 +330,10 @@ export default {
   data() {
     return {
       skills: [
+        // max100にすると計算しやすい
         { name: 'PHP(Laravel)', value: 75 },
-        { name: 'JavaScript(vue.js)', value: 35 },
-        { name: 'HTML5/CSS3', value: 35 },
+        { name: 'JavaScript(vue.js)', value: 30 },
+        { name: 'HTML5/CSS3', value: 30 },
         { name: 'Dart(Flutter)', value: 10 },
         { name: 'Go', value: 10 },
         { name: 'Database(MySQL)', value: 45 }
@@ -434,6 +437,27 @@ export default {
           performance:
             'PM, PL, バックエンド開発リード, 新規API設計90本(PJ合計), API実装, 運用保守対応全般, cloudWatchを使ったログ調査',
           members: '10人(PM1, バックエンド3, ネイティブ3, フロント2, 企画1)'
+        },
+        {
+          title: '飲食店向けオウンドアプリ開発',
+          about: '大手飲食チェーン向けのオウンドアプリ新規開発',
+          technology:
+            'bootstrap, Laravel(php7.4), RedisCluster, MySQL, Docker, ECS(AWS)',
+          role: '新規開発の要件定義, アーキテクチャ設計, API概要設計',
+          performance:
+            'アプリケーション全体の要件定義, サーバーサイド技術選定, サーバーサイド全体のアーキテクチャ設計, RESTFullなAPI設計',
+          members: '8人(PM1, バックエンド3, ネイティブ3, フロント1)'
+        },
+        {
+          title: '飲食店向けスマホ注文アプリ web拡張',
+          about:
+            '飲食チェーンを対象としたスマートフォン注文アプリのネイティブ版からweb対応する機能拡張',
+          technology:
+            'vue.js, Laravel(php7.3), RedisCluster, MySQL, Docker, ECS(AWS)',
+          role: '要件定義, 設計, 実装, テスト, アーキテクチャ設計',
+          performance:
+            'バックエンド開発全体のリード, タスク管理, 機能拡張に伴う認証周辺の詳細設計・実装',
+          members: '7人(PM1, バックエンド2, ネイティブ2, フロント1, 企画1)'
         },
         {
           title: '問診票システム開発',
